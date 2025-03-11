@@ -9,7 +9,6 @@ session:Session |null;
 
 }
 import { useState } from "react";
-import { CiTrash } from "react-icons/ci";
 import { FaSave } from "react-icons/fa";
 const Content:React.FC<ContentProps> =({onExit,setNotes,session})=>{
 
