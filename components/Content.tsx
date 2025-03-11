@@ -4,7 +4,7 @@ import { Session } from "@supabase/supabase-js";
 interface ContentProps{
 
 onExit:()=>void;
-setNotes:any;
+setNotes:React.Dispatch<React.SetStateAction<any[]>>;
 session:Session |null;
 
 }
