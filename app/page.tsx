@@ -18,7 +18,7 @@ import Login from "@/components/Login";
 export default function Home() {
   const [write,setWrite]=useState<boolean>(false)
   const[notes,setNotes]=useState<Note[]>([]);
-  const router=useRouter()
+
   const [session,setSession]=useState<Session | null>(null)
   useEffect(()=>{
 const checkSession = async()=>{
