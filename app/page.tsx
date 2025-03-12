@@ -10,7 +10,7 @@ interface Note{
 
 }
 import { IoIosAddCircle } from "react-icons/io";
-import { useRouter } from "next/navigation";
+
 import { useEffect,useState } from "react";
 import { supabase } from "@/lib/supabase";
 import Card from "@/components/Card"
