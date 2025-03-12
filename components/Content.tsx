@@ -1,7 +1,7 @@
 "use client";
 import { supabase } from "@/lib/supabase";
 import { Session } from "@supabase/supabase-js";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { FaSave } from "react-icons/fa";
 
 interface Note {
