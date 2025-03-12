@@ -1,5 +1,5 @@
 "use client"
-import { CiPen, CiTrash } from "react-icons/ci";
+import {CiTrash } from "react-icons/ci";
 
 interface cardprops{
 
