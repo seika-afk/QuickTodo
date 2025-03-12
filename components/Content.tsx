@@ -3,15 +3,7 @@ import { supabase } from "@/lib/supabase";
 import { Session } from "@supabase/supabase-js";
 import { useState } from "react";
 import { FaSave } from "react-icons/fa";
-
-interface Note {
-    id: number | undefined; // Add this
-  title: string;
-  content: string;
-  date: string;
-  user_id: string;
-}
-
+import { Note } from "@/types";
 interface ContentProps {
   onExit: () => void;
   setNotes: React.Dispatch<React.SetStateAction<Note[]>>;
