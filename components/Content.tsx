@@ -5,6 +5,7 @@ import { useState } from "react";
 import { FaSave } from "react-icons/fa";
 
 interface Note {
+    id?: number; // Add this
   title: string;
   content: string;
   date: string;
