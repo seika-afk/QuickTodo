@@ -5,7 +5,7 @@ import { useState } from "react";
 import { FaSave } from "react-icons/fa";
 
 interface Note {
-    id?: number; // Add this
+    id: number; // Add this
   title: string;
   content: string;
   date: string;
@@ -32,10 +32,11 @@ const Content: React.FC<ContentProps> = ({ onExit, setNotes, session }) => {
 
     if (error) {
       console.error("Error saving note:", error);
-    } else if (data && data.length > 0) {
-      console.log("Note saved");
-      setNotes((prev) => [...prev, data[0]]);
-    }
+    } 
+
+      if (data && data.length > 0) {
+  setNotes((prev) => [...prev, data[0] as Note]); // Ensure proper type
+}
   };
 
   return (
