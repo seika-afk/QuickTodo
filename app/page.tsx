@@ -1,14 +1,7 @@
 "use client"
 import { Session } from "@supabase/supabase-js";
 import Content from "@/components/Content";
-interface Note{
-  id: number;
-  title: string;
-  content: string;
-  date: string;
-
-
-}
+import { Note } from "@/types";
 import { IoIosAddCircle } from "react-icons/io";
 
 import { useEffect,useState } from "react";
